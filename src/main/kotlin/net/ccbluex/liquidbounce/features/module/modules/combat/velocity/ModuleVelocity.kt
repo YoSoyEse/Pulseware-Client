@@ -48,13 +48,13 @@ object ModuleVelocity : ClientModule("Velocity", Category.COMBAT, aliases = list
         "Mode", VelocityModify, arrayOf(
             // Generic modes
             VelocityModify,
-            VelocityReversal,
-            VelocityStrafe,
+            //VelocityReversal,
+            //VelocityStrafe,
             VelocityJumpReset,
 
             // Server modes
             VelocityHypixel,
-            VelocityDexland,
+            //VelocityDexland,
             VelocityHylex,
             VelocityBlocksMC,
 
@@ -63,8 +63,8 @@ object ModuleVelocity : ClientModule("Velocity", Category.COMBAT, aliases = list
             VelocityGrim2371_2,
             VelocityGrim2371_3,
             //VelocityGrim2372,
-            VelocityGrim2344,
-            VelocityAAC442,
+            //VelocityGrim2344,
+            //VelocityAAC442,
             VelocityIntave,
         )
     ).apply(::tagBy)

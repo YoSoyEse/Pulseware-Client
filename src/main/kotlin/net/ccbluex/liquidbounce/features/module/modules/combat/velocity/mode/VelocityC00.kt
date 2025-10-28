@@ -21,7 +21,7 @@ package net.ccbluex.liquidbounce.features.module.modules.combat.velocity.mode
 import net.ccbluex.liquidbounce.event.events.AttackEntityEvent
 import net.ccbluex.liquidbounce.event.handler
 
-internal object VelocityDexland : VelocityMode("Dexland") {
+internal object VelocityC00 : VelocityMode("C00") {
 
     private val hReduce by float("HReduce", 0.3f, 0f..1f)
     private val times by int("AttacksToWork", 4, 1..10)

@@ -28,8 +28,6 @@ import net.ccbluex.liquidbounce.api.core.parse
 import net.ccbluex.liquidbounce.api.thirdparty.translator.TranslateLanguage
 import net.ccbluex.liquidbounce.api.thirdparty.translator.TranslationResult
 import net.ccbluex.liquidbounce.api.thirdparty.translator.TranslatorChoice
-import net.ccbluex.liquidbounce.authlib.utils.array
-import net.ccbluex.liquidbounce.authlib.utils.string
 import net.ccbluex.liquidbounce.config.types.nesting.ChoiceConfigurable
 import okhttp3.HttpUrl.Companion.toHttpUrl
 
@@ -73,9 +71,9 @@ class GoogleTranslateApi(
         // sl empty -> HTTP 400
         // tl empty | text empty -> result empty
         return if (sourceLanguage is TranslateLanguage.Auto) {
-            val arr = response.parse<JsonArray>().array(0)!!
-            val result = arr.string(0)!!
-            val detectedLanguage = arr.string(1)!!
+            val arr = response.parse<JsonArray>().get(0)
+            val result = arr.asString
+            val detectedLanguage = arr.asString
             TranslationResult.Success(
                 origin = text,
                 translation = result,
@@ -83,7 +81,7 @@ class GoogleTranslateApi(
                 toLanguage = targetLanguage,
             )
         } else {
-            val result = response.parse<JsonArray>().string(0)!!
+            val result = response.parse<JsonArray>().asString
             TranslationResult.Success(
                 origin = text,
                 translation = result,
