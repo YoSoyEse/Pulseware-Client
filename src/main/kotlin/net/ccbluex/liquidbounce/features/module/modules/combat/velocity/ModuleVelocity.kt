@@ -59,19 +59,10 @@ object ModuleVelocity : ClientModule("Velocity", Category.COMBAT, aliases = list
             VelocityBlocksMC,
 
             // Anti cheat modes
-            VelocityTest,
-            VelocityTest2,
-            VelocityDelayedPong,
-
             VelocityGrim2371,
             VelocityGrim2371_2,
             VelocityGrim2371_3,
-            VelocityGrim2371Stall,
-            VelocityGrim2372,
-
-            VelocityAstralMC,
-            VelocityC00,
-
+            //VelocityGrim2372,
             VelocityGrim2344,
             VelocityAAC442,
             VelocityIntave,

@@ -39,17 +39,12 @@ import net.ccbluex.liquidbounce.features.module.modules.movement.speed.modes.hyl
 import net.ccbluex.liquidbounce.features.module.modules.movement.speed.modes.hylex.SpeedHylexLowHop
 import net.ccbluex.liquidbounce.features.module.modules.movement.speed.modes.intave.SpeedIntave14
 import net.ccbluex.liquidbounce.features.module.modules.movement.speed.modes.intave.SpeedIntave14Fast
-import net.ccbluex.liquidbounce.features.module.modules.movement.speed.modes.karhu.SpeedKarhu
-import net.ccbluex.liquidbounce.features.module.modules.movement.speed.modes.karhu.SpeedKarhuground
-import net.ccbluex.liquidbounce.features.module.modules.movement.speed.modes.kraken.KrakenSpeed
 import net.ccbluex.liquidbounce.features.module.modules.movement.speed.modes.matrix.SpeedMatrix7
 import net.ccbluex.liquidbounce.features.module.modules.movement.speed.modes.ncp.SpeedNCP
 import net.ccbluex.liquidbounce.features.module.modules.movement.speed.modes.polar.SpeedPolar
-import net.ccbluex.liquidbounce.features.module.modules.movement.speed.modes.test.RiseLowHop
 import net.ccbluex.liquidbounce.features.module.modules.movement.speed.modes.sentinel.SpeedSentinelDamage
 import net.ccbluex.liquidbounce.features.module.modules.movement.speed.modes.spartan.SpeedSpartanV4043
 import net.ccbluex.liquidbounce.features.module.modules.movement.speed.modes.spartan.SpeedSpartanV4043FastFall
-import net.ccbluex.liquidbounce.features.module.modules.movement.speed.modes.test.RiseSafeLowHop
 import net.ccbluex.liquidbounce.features.module.modules.movement.speed.modes.verus.SpeedVerusB3882
 import net.ccbluex.liquidbounce.features.module.modules.movement.speed.modes.vulcan.SpeedVulcan286
 import net.ccbluex.liquidbounce.features.module.modules.movement.speed.modes.vulcan.SpeedVulcan288
@@ -97,28 +92,16 @@ object ModuleSpeed : ClientModule("Speed", Category.MOVEMENT) {
         SpeedVulcanGround286(configurable),
         SpeedGrimCollide(configurable),
 
-        // Karhu
-        SpeedKarhu(configurable),
-        SpeedKarhuground(configurable),
-
-        // Polar
-        SpeedPolar(configurable),
-
         SpeedNCP(configurable),
 
         SpeedIntave14(configurable),
         SpeedIntave14Fast(configurable),
 
-        KrakenSpeed(configurable),
-
-         // RISE
-        RiseLowHop(configurable),
-        RiseSafeLowHop(configurable),
-
         SpeedHylexLowHop(configurable),
         SpeedHylexGround(configurable),
 
         SpeedBlocksMC(configurable),
+        SpeedPolar(configurable),
 
         SpeedMatrix7(configurable)
     )
