@@ -6,7 +6,7 @@
 [YouTube](https://youtube.com/@kayver863)
 </div>
 
-PulseWare es un cliente de Minecraft personalizado basado en Fabric API. Incluye modificaciones y funcionalidades propias, dejando de lado las del proyecto LiquidBounce original.
+Pulseware es un cliente de Minecraft personalizado basado en Fabric API. Incluye modificaciones y funcionalidades propias, dejando de lado las del proyecto LiquidBounce original.
 
 ## Issues
 
