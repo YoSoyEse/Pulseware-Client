@@ -10,60 +10,46 @@
 [X](https://x.com/CCBlueX)
 </div>
 
-LiquidBounce is a free and open-source mixin-based injection hacked client using the Fabric API for Minecraft.
+PulseWare es un cliente de Minecraft personalizado basado en Fabric API. Incluye modificaciones y funcionalidades propias, dejando de lado las del proyecto LiquidBounce original.
 
 ## Issues
 
-If you notice any bugs or missing features, you can let us know by opening an
-issue [here](https://github.com/CCBlueX/LiquidBounce/issues).
+Si encuentras bugs o faltan características, puedes abrir un issue [aquí](https://github.com/CCBlueX/LiquidBounce/issues).
 
 ## License
 
-This project is subject to the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html). This
-does only apply for source code located directly in this clean repository. During the development and compilation
-process, additional source code may be used to which we have obtained no rights. Such code is not covered by the GPL
-license.
+Este proyecto está sujeto a la [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html), aplicable al código fuente ubicado directamente en este repositorio. Durante el desarrollo se pueden usar otras librerías externas que tienen sus propias licencias.
 
-For those who are unfamiliar with the license, here is a summary of its main points. This is by no means legal advice
-nor legally binding.
+*Acciones permitidas:*
 
-*Actions that you are allowed to do:*
+- Usar
+- Compartir
+- Modificar
 
-- Use
-- Share
-- Modify
+*Condiciones al usar código de este proyecto:*
 
-*If you do decide to use ANY code from the source:*
-
-- **You must disclose the source code of your modified work and the source code you took from this project. This means
-  you are not allowed to use code from this project (even partially) in a closed-source (or even obfuscated)
-  application.**
-- **Your modified application must also be licensed under the GPL**
+- Debes divulgar el código fuente de cualquier modificación y cualquier código tomado de este proyecto.
+- La aplicación modificada también debe estar bajo la licencia GPL.
 
 ## Setting up a Workspace
 
-LiquidBounce uses Gradle; to make sure that it is installed properly, you can
-check [Gradle's website](https://gradle.org/install/). It also requires [Node.js](https://nodejs.org) to be installed for
-our [theme](https://github.com/CCBlueX/LiquidBounce/tree/nextgen/src-theme).
+PulseWare usa Gradle; asegúrate de tenerlo instalado correctamente desde [Gradle](https://gradle.org/install/). También requiere [Node.js](https://nodejs.org) para nuestro [tema](https://github.com/CCBlueX/LiquidBounce/tree/nextgen/src-theme).
 
-1. Clone the repository using `git clone --recurse-submodules https://github.com/CCBlueX/LiquidBounce`.
-2. CD into the local repository. (`cd LiquidBounce`)
-3. Run `./gradlew genSources` for better development experience (Optional).
-4. Open the folder as a Gradle project in your preferred IDE.
-5. Run the client. (`./gradlew runClient`)
+1. Clona el repositorio usando `git clone --recurse-submodules https://github.com/CCBlueX/LiquidBounce`.
+2. Accede a la carpeta del repositorio (`cd LiquidBounce`).
+3. Ejecuta `./gradlew genSources` para mejor experiencia de desarrollo (opcional).
+4. Abre la carpeta como proyecto Gradle en tu IDE preferido.
+5. Ejecuta el cliente con `./gradlew runClient`.
 
 ## Additional libraries
 
 ### Mixins
 
-Mixins can be used to modify classes at runtime before they are loaded. LiquidBounce uses it to inject its code into the
-Minecraft client. This way, none of Mojang's copyrighted code is shipped. If you want to learn more about it, check out
-its [Documentation](https://docs.spongepowered.org/5.1.0/en/plugin/internals/mixins.html).
+Se usan para modificar clases en tiempo de ejecución antes de cargarlas. PulseWare usa mixins para inyectar su código en el cliente de Minecraft sin distribuir código protegido de Mojang. Más información en la [documentación de Mixins](https://docs.spongepowered.org/5.1.0/en/plugin/internals/mixins.html).
 
 ## Contributing
 
-We appreciate contributions. So if you want to support us, feel free to make changes to LiquidBounce's source code and
-submit a pull request.
+Se aceptan contribuciones. Puedes modificar el código de PulseWare y enviar un pull request.
 
 ## Stats
 
