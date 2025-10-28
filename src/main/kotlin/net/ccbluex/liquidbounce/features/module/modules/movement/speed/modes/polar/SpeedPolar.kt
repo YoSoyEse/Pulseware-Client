@@ -23,9 +23,6 @@ class SpeedPolar(override val parent: ChoiceConfigurable<*>) : Choice("Polar Rot
     private var lastDirectionChangeTime = 0L
     private var currentYawOffset = 0.0
 
-    /**
-     * Detecta daño
-     */
     @Suppress("unused")
     private val healthHandler = handler<HealthUpdateEvent> { event ->
         if (event.health < event.previousHealth) {
@@ -34,9 +31,6 @@ class SpeedPolar(override val parent: ChoiceConfigurable<*>) : Choice("Polar Rot
         }
     }
 
-    /**
-     * Movimiento rotacional flotante
-     */
     @Suppress("unused")
     private val tickHandler = tickHandler {
         if (hurtCooldownTicks > 0) hurtCooldownTicks--
@@ -67,7 +61,7 @@ class SpeedPolar(override val parent: ChoiceConfigurable<*>) : Choice("Polar Rot
             val dx = target.x - player.x
             val dz = target.z - player.z
             val targetYaw = Math.toDegrees(atan2(dz, dx)) - 90.0
-            player.yaw = player.yaw + ((targetYaw - player.yaw) * 0.05f).toFloat()
+            player.yaw += ((targetYaw - player.yaw) * 0.05f).toFloat()
         }
     }
 }
